@@ -25,19 +25,23 @@ ul {
 p {
   margin: 0;
 }
-/* img {
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* .list img {
   display: block;
 } */
-.list img {
-  display: block;
-}
 .conteiner {
   margin-right: auto;
   margin-left: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
+}
+.section {
 }
 /* .site-nav .item {
   outline: 2px solid tomato;
@@ -182,7 +186,8 @@ body {
 }
 .specs {
   display: flex;
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -200,7 +205,6 @@ body {
 }
 /* --------- чем мы занимаемся section --------- */
 .section-main-text {
-  margin-top: 94px;
   padding-top: 94px;
   padding-bottom: 50px;
   text-align: center;
@@ -365,9 +369,9 @@ body {
   color: var(--text-color);
 }
 .conteiner-filter {
-  margin-top: 94px;
+  padding-top: 94px;
 }
 .conteiner-example {
   margin-top: 56px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
