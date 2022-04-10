@@ -25,7 +25,10 @@ ul {
 p {
   margin: 0;
 }
-img {
+/* img {
+  display: block;
+} */
+.list img {
   display: block;
 }
 .conteiner {
@@ -34,7 +37,7 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 /* .site-nav .item {
   outline: 2px solid tomato;
