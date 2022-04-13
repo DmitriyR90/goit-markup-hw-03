@@ -30,22 +30,16 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* .list img {
-  display: block;
-} */
+
 .conteiner {
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
 }
 .section {
+  padding: 94px 0;
 }
-/* .site-nav .item {
-  outline: 2px solid tomato;
-} */
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
@@ -62,11 +56,11 @@ body {
   font-style: normal;
 }
 /* --------- Header section --------- */
-.main-nav {
+.header.conteiner {
   display: flex;
   align-items: center;
 }
-.nav-logo {
+.header-logo {
   display: flex;
   align-items: center;
 }
@@ -82,11 +76,9 @@ body {
   letter-spacing: 0.03em;
   margin-right: 93px;
 }
-/* .logo.link {
-  margin-right: 93px;} */
+
 .site-contact {
   margin-left: auto;
-  /* margin-right: auto; */
 }
 
 .logo-ins {
@@ -99,9 +91,7 @@ body {
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
-/* .site-nav .item + .item {
-  margin-left: 40px;
-} */
+
 .site-nav .link {
   display: block;
   padding-top: 32px;
@@ -141,13 +131,13 @@ body {
 }
 /* --------- Hero section --------- */
 .hero {
+  padding: 200px 0;
   background-color: var(--hero-bg-color);
   text-align: center;
 }
 .hero-text {
   margin-top: 0;
   margin-bottom: 30px;
-  /* padding-top: 200px; */
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -186,13 +176,7 @@ body {
 }
 .specs {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
-/* .site-nav .item:not(:last-child) {
-  margin-right: 50px;
-} */
-
 .specs .list:not(:last-child) {
   margin-right: 30px;
 }
@@ -205,13 +189,15 @@ body {
 }
 /* --------- чем мы занимаемся section --------- */
 .section-main-text {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   text-align: center;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+.section.our-works {
+  padding-top: 0%;
 }
 .work-example {
   display: flex;
@@ -222,27 +208,25 @@ body {
 .section-team {
   background-color: var(--team-bg-color);
 }
-/* .conteiner .section-team {
-  padding-top: 94px;
-} */
-.bg-color {
+.workers-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: var(--main-bg-color);
   text-align: center;
 }
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  padding-top: 30px;
+  margin-bottom: 9px;
 }
 .team-prof {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-top: 10px;
-  padding-bottom: 30px;
 }
 .workers-cards {
   display: flex;
@@ -263,7 +247,12 @@ body {
   color: var(--main-bg-color);
 }
 .footer {
+  padding: 60px 0;
   background-color: var(--footer-bg-color);
+}
+.footer-adress {
+  font-style: normal;
+  margin-top: 20px;
 }
 .site-address .link {
   font-size: 14px;
@@ -280,27 +269,16 @@ body {
 }
 .logo-footer {
   display: inline-block;
-  padding-top: 60px;
   margin-right: 0;
 }
 
-/* .link.adr {
-  display: inline-block;
-  padding-top: 20px;
-} */
-/* .site-address .list.address {
-  padding-top: 20px;
-} */
 .site-address .list {
   display: block;
-  padding-top: 9px;
 }
-.list.address {
-  padding-top: 20px;
+.site-address .list:not(:last-child) {
+  margin-bottom: 9px;
 }
-.site-address {
-  padding-bottom: 60px;
-}
+
 /* --------- СТРАНИЦА ПОРТФОЛИО --------- */
 
 .portfolio-btn {
@@ -338,12 +316,16 @@ body {
 .example-card {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .example-card .list {
   margin-right: 30px;
   margin-bottom: 30px;
-  outline: 1px solid #eeeeee;
+}
+.example-name {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 .example-card .list:nth-child(3n) {
   margin-right: 0;
@@ -352,7 +334,7 @@ body {
   margin-bottom: 0;
 }
 
-*/ .portfolio-title-text {
+.portfolio-title-text {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -363,14 +345,11 @@ body {
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
-
   letter-spacing: 0.03em;
-
   color: var(--text-color);
+  margin-top: 4px;
 }
-.conteiner-filter {
-  padding-top: 94px;
-}
+
 .conteiner-example {
   margin-top: 56px;
   padding-bottom: 94px;
